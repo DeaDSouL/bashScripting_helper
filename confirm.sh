@@ -7,7 +7,8 @@
 
 confirm() {
     while true; do
-            read -r -p "${1:-Are you sure? [y/N]} " response
+            # Read the answer (use /dev/tty in case stdin is redirected from somewhere else)
+            read -r -p "${1:-Are you sure? [y/N]} " response </dev/tty
             case $response in
             [yY][eE][sS]|[yY])
                 ret=true
