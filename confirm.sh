@@ -3,6 +3,7 @@
 # Yes/No prompt function
 #  usage: confirm 'your message' && some_cmd
 # source: http://stackoverflow.com/questions/3231804/in-bash-how-to-add-are-you-sure-y-n-to-any-command-or-alias
+#    alt: https://gist.github.com/davejamesmiller/1965569
 
 confirm() {
     while true; do
